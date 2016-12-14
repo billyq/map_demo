@@ -1,0 +1,104 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns="sap.m" controllerName="map_demo.controller.View1">
+	<App>
+		<pages>
+			<Page title="Manufacturing Plant Approval Process - MAP" navButtonText="Back" showNavButton="true" icon="sap-icon://accept">
+			<content>
+			    <sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form0">
+			        <sap.ui.layout.form:formContainers><sap.ui.layout.form:FormContainer title="Request Details" id="__container2">
+			        	
+			        	
+			                <sap.ui.layout.form:formElements>
+			                    <sap.ui.layout.form:FormElement label="Vendor" id="__element2">
+			                    <sap.ui.layout.form:fields>
+			                        <Input width="100%" id="__input4" showValueHelp="true" dateFormat="" valueHelpRequest=""/>
+			                    </sap.ui.layout.form:fields>
+			                    </sap.ui.layout.form:FormElement>
+			                    
+			                    
+			                    
+			                    <sap.ui.layout.form:FormElement label="Request Type" id="__element3">
+			                    <sap.ui.layout.form:fields>
+			                    <ComboBox xmlns:sap.ui.core="sap.ui.core" selectedItem="Element sap.ui.core.ListItem#__item17" value="List Item 1" selectedKey="item1" selectedItemId="__item17" id="__box2">
+			                        <items>
+			                            <sap.ui.core:ListItem text="One Time Approval" key="item1" id="__item17"/>
+			                            <sap.ui.core:ListItem text="New Manufacturing Plant Approval" key="item2" id="__item18"/>
+			                            <sap.ui.core:ListItem text="Third Party Assessment" key="item30" id="__item30"/>
+			                            <sap.ui.core:ListItem text="Expanding Product Engine" key="item31" id="__item31"/>
+			                            <sap.ui.core:ListItem text="Periodiac Assessment" key="item3" id="__item19"/></items>
+			                    </ComboBox>
+			                    </sap.ui.layout.form:fields>
+			                    </sap.ui.layout.form:FormElement>
+			                    <sap.ui.layout.form:FormElement label="Reason" id="__element0">
+			                    <sap.ui.layout.form:fields>
+			                        <Text text="Reinstatement" id="__text14"/>
+			                    </sap.ui.layout.form:fields>
+			                    </sap.ui.layout.form:FormElement>
+			                    <sap.ui.layout.form:FormElement label="Validity Date" id="__element1">
+			                    <sap.ui.layout.form:fields>
+			                        <DatePicker width="100%" id="__picker2"/>
+			                    </sap.ui.layout.form:fields>
+			                    </sap.ui.layout.form:FormElement>
+			                    <sap.ui.layout.form:FormElement label="Reason" id="__element4">
+			                    <sap.ui.layout.form:fields>
+			                        <ComboBox xmlns:sap.ui.core="sap.ui.core" selectedItem="Element sap.ui.core.ListItem#__item0" value="List Item 1" selectedKey="item1" selectedItemId="__item0" id="__box0">
+			                            <items>
+			                                <sap.ui.core:ListItem text="List Item 1" key="item1" id="__item0"/>
+			                                <sap.ui.core:ListItem text="List Item 2" key="item2" id="__item1"/>
+			                                <sap.ui.core:ListItem text="List Item 3" key="item3" id="__item2"/></items>
+			                        </ComboBox>
+			                    </sap.ui.layout.form:fields>
+			                    </sap.ui.layout.form:FormElement>
+			                </sap.ui.layout.form:formElements>
+			            <sap.ui.layout.form:customData>
+			                <sap.ui.core:CustomData xmlns:sap.ui.core="sap.ui.core" key="w5g.dt.editable" value="false" id="__data7"/>
+			            </sap.ui.layout.form:customData>
+			            </sap.ui.layout.form:FormContainer>
+			        </sap.ui.layout.form:formContainers>
+			        <sap.ui.layout.form:layout>
+			            <sap.ui.layout.form:ResponsiveGridLayout id="__layout1"/>
+			        </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+			    <Bar id="__bar0"/>
+			    <UploadCollection id="__collection0">
+			        <items>
+			            <UploadCollectionItem contributor="Contributor1" fileName="fileName1" uploadedDate="Wed Dec 14 2016" id="__item6"/>
+			            <UploadCollectionItem contributor="Contributor1" fileName="fileName2" uploadedDate="Wed Dec 14 2016" id="__item7"/>
+			            <UploadCollectionItem contributor="Contributor1" fileName="fileName3" uploadedDate="Wed Dec 14 2016" id="__item8"/></items>
+			    </UploadCollection>
+			    <Bar ariaLabelledBy="__label6" id="__bar1">
+			        <contentLeft>
+			            <Label text="Materials" width="100%" id="__label8"/>
+			        </contentLeft>
+			    </Bar>
+			    <Table noDataText="Drop column list items here and columns in the area above" id="__table0">
+			        <items>
+			            <ColumnListItem id="__item9">
+			                <cells>
+			                    <Text text="Row 1 Cell 1" id="__text7"/>
+			                    <Text text="Row 1 Cell 2" id="__text8"/></cells>
+			            </ColumnListItem>
+			            <ColumnListItem id="__item10">
+			                <cells>
+			                    <Text text="Row 2 Cell 1" id="__text10"/>
+			                    <Text text="Row 2 Cell 2" id="__text11"/></cells>
+			            </ColumnListItem></items>
+			        <columns>
+			            <Column id="__column0">
+			                <header>
+			                    <Label text="Materials" id="__label5"/>
+			                </header>
+			            </Column>
+			            <Column id="__column1">
+			                <header>
+			                    <Label text="Localization Index" id="__label6"/>
+			                </header>
+			            </Column>
+			            <Column id="__column2">
+			            </Column></columns></Table>
+			</content>
+			<footer>
+			    <Toolbar width="100%" id="__toolbar1" active="true"/>
+			</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
